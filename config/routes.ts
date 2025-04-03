@@ -36,6 +36,13 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	
+	{
+		path: '/phong-hoc',
+		name: 'Quản lý phòng học',
+		component: './phonghoc',
+		icon: 'HomeOutlined',
+	},
 
 	// DANH MUC HE THONG
 	// {
