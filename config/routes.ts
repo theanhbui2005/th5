@@ -37,21 +37,9 @@
 		icon: 'ArrowsAltOutlined',
 	},
 	{
-		path: '/quanly-nhanvien',
-		name: 'Quanlynhanvien',
-		component: './Quanlynhanvien',
-		icon: 'ArrowsAltOutlined',
-	},
-	{
-		path: '/quanly-sovanbang',
-		name: 'Quanlysovanbang',
-		component: './Quanlysovanbang',
-		icon: 'ArrowsAltOutlined',
-	},
-	{
-		path: '/quyetdinh-totnghiep',
-		name: 'Quyetdinhtotnghiep',
-		component: './Quyetdinhtotnghiep',
+		path: '/quanly-donhang',
+		name: 'Quanlydonhang',
+		component: './Quanlydonhang',
 		icon: 'ArrowsAltOutlined',
 	},
 
