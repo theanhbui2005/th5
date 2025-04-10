@@ -1,81 +1,184 @@
 {
-  "caulacbo": [
+  "clubs": [
     {
-      "id": 1,
-      "ten": "CLB Tin học",
-      "moTa": "Câu lạc bộ dành cho sinh viên yêu thích công nghệ thông tin",
-      "nguoiQuanLy": "Nguyễn Văn A",
-      "soDienThoai": "0123456789",
+      "id": "1",
+      "name": "CLB Tin học",
+      "description": "Câu lạc bộ dành cho sinh viên yêu thích công nghệ thông tin",
+      "manager": "Nguyễn Văn A",
+      "phone": "0123456789",
       "email": "clbtinhoc@example.com",
-      "diaDiem": "Phòng H1-101",
-      "thoiGianHoatDong": "Thứ 7 hàng tuần"
+      "location": "Phòng H1-101",
+      "schedule": "Thứ 7 hàng tuần"
     },
     {
-      "id": 2,
-      "ten": "CLB Âm nhạc",
-      "moTa": "Câu lạc bộ dành cho những người yêu âm nhạc",
-      "nguoiQuanLy": "Trần Thị B",
-      "soDienThoai": "0987654321",
+      "id": "2",
+      "name": "CLB Âm nhạc",
+      "description": "Câu lạc bộ dành cho những người yêu âm nhạc",
+      "manager": "Trần Thị B",
+      "phone": "0987654321",
       "email": "clbamnhac@example.com",
-      "diaDiem": "Phòng H2-202",
-      "thoiGianHoatDong": "Chủ nhật hàng tuần"
+      "location": "Phòng H2-202",
+      "schedule": "Chủ nhật hàng tuần"
     },
     {
-      "id": 3,
-      "ten": "CLB Tiếng Anh",
-      "moTa": "Câu lạc bộ luyện kỹ năng tiếng Anh",
-      "nguoiQuanLy": "Lê Văn C",
-      "soDienThoai": "0369852147",
+      "id": "3",
+      "name": "CLB Tiếng Anh",
+      "description": "Câu lạc bộ luyện kỹ năng tiếng Anh",
+      "manager": "Lê Văn C",
+      "phone": "0369852147",
       "email": "clbtienganh@example.com",
-      "diaDiem": "Phòng H3-303",
-      "thoiGianHoatDong": "Thứ 6 hàng tuần"
+      "location": "Phòng H3-303",
+      "schedule": "Thứ 6 hàng tuần"
     }
   ],
-  "dangky": [
+  "applications": [
     {
-      "id": 1,
-      "sinhVienId": "SV001",
-      "hoTen": "Nguyễn Văn X",
+      "id": "app001",
+      "fullName": "Nguyễn Văn X",
       "email": "nguyenx@example.com",
-      "soDienThoai": "0123456789",
-      "caulacboId": 1,
-      "ngayDangKy": "2023-05-10T08:30:00Z",
-      "lyDo": "Muốn học hỏi thêm về công nghệ thông tin",
-      "trangThai": "chờ duyệt"
+      "phone": "0123456789",
+      "gender": "male",
+      "address": "Hà Nội",
+      "strengths": "Lập trình, Thiết kế Web",
+      "clubId": "1",
+      "reason": "Muốn học hỏi thêm về công nghệ thông tin",
+      "status": "pending",
+      "note": "",
+      "history": [
+        {
+          "id": "log001",
+          "action": "created",
+          "timestamp": "2023-05-10T08:30:00Z",
+          "admin": "system",
+          "reason": "Tạo đơn đăng ký mới"
+        }
+      ],
+      "createdAt": "2023-05-10T08:30:00Z"
     },
     {
-      "id": 2,
-      "sinhVienId": "SV002",
-      "hoTen": "Trần Thị Y",
+      "id": "app002",
+      "fullName": "Trần Thị Y",
       "email": "trany@example.com",
-      "soDienThoai": "0987654321",
-      "caulacboId": 2,
-      "ngayDangKy": "2023-05-11T10:15:00Z",
-      "lyDo": "Yêu thích âm nhạc và muốn phát triển kỹ năng",
-      "trangThai": "đã duyệt"
+      "phone": "0987654321",
+      "gender": "female",
+      "address": "Hồ Chí Minh",
+      "strengths": "Âm nhạc, Thanh nhạc",
+      "clubId": "2",
+      "reason": "Yêu thích âm nhạc và muốn phát triển kỹ năng",
+      "status": "approved",
+      "note": "",
+      "history": [
+        {
+          "id": "log002",
+          "action": "created",
+          "timestamp": "2023-05-11T10:15:00Z",
+          "admin": "system",
+          "reason": "Tạo đơn đăng ký mới"
+        },
+        {
+          "id": "log003",
+          "action": "approved",
+          "timestamp": "2023-05-12T09:45:00Z",
+          "admin": "Admin",
+          "reason": "Đạt yêu cầu"
+        }
+      ],
+      "createdAt": "2023-05-11T10:15:00Z"
+    },
+    {
+      "id": "app003",
+      "fullName": "Lê Văn Z",
+      "email": "lez@example.com",
+      "phone": "0369852147",
+      "gender": "male",
+      "address": "Đà Nẵng",
+      "strengths": "Ngoại ngữ, Giao tiếp",
+      "clubId": "3",
+      "reason": "Muốn giao lưu và nâng cao kỹ năng tiếng Anh",
+      "status": "rejected",
+      "note": "Lịch tập không phù hợp với lịch học",
+      "history": [
+        {
+          "id": "log004",
+          "action": "created",
+          "timestamp": "2023-05-13T14:20:00Z",
+          "admin": "system",
+          "reason": "Tạo đơn đăng ký mới"
+        },
+        {
+          "id": "log005",
+          "action": "rejected",
+          "timestamp": "2023-05-14T08:30:00Z",
+          "admin": "Admin",
+          "reason": "Lịch tập không phù hợp với lịch học"
+        }
+      ],
+      "createdAt": "2023-05-13T14:20:00Z"
     }
   ],
-  "sinhvien": [
+  "actionLogs": [
+    {
+      "id": "log001",
+      "applicationId": "app001",
+      "action": "created",
+      "timestamp": "2023-05-10T08:30:00Z",
+      "admin": "system",
+      "reason": "Tạo đơn đăng ký mới"
+    },
+    {
+      "id": "log002",
+      "applicationId": "app002",
+      "action": "created",
+      "timestamp": "2023-05-11T10:15:00Z",
+      "admin": "system",
+      "reason": "Tạo đơn đăng ký mới"
+    },
+    {
+      "id": "log003",
+      "applicationId": "app002",
+      "action": "approved",
+      "timestamp": "2023-05-12T09:45:00Z",
+      "admin": "Admin",
+      "reason": "Đạt yêu cầu"
+    },
+    {
+      "id": "log004",
+      "applicationId": "app003",
+      "action": "created",
+      "timestamp": "2023-05-13T14:20:00Z",
+      "admin": "system",
+      "reason": "Tạo đơn đăng ký mới"
+    },
+    {
+      "id": "log005",
+      "applicationId": "app003",
+      "action": "rejected",
+      "timestamp": "2023-05-14T08:30:00Z",
+      "admin": "Admin",
+      "reason": "Lịch tập không phù hợp với lịch học"
+    }
+  ],
+  "students": [
     {
       "id": "SV001",
-      "hoTen": "Nguyễn Văn X",
+      "fullName": "Nguyễn Văn X",
       "email": "nguyenx@example.com",
-      "soDienThoai": "0123456789",
-      "lop": "IT001"
+      "phone": "0123456789",
+      "class": "IT001"
     },
     {
       "id": "SV002",
-      "hoTen": "Trần Thị Y",
+      "fullName": "Trần Thị Y",
       "email": "trany@example.com",
-      "soDienThoai": "0987654321",
-      "lop": "IT002"
+      "phone": "0987654321",
+      "class": "IT002"
     },
     {
       "id": "SV003",
-      "hoTen": "Lê Văn Z",
+      "fullName": "Lê Văn Z",
       "email": "lez@example.com",
-      "soDienThoai": "0369852147",
-      "lop": "IT003"
+      "phone": "0369852147",
+      "class": "IT003"
     }
   ]
 } 

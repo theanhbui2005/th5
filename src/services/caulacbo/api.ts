@@ -3,94 +3,120 @@ import { request } from 'umi';
 // URL cơ sở của json-server
 const BASE_URL = 'http://localhost:3000';
 
-// API cho câu lạc bộ
-export async function getCauLacBoList() {
-  return request(`${BASE_URL}/caulacbo`, {
+// API cho câu lạc bộ (clubs)
+export async function getClubList() {
+  return request(`${BASE_URL}/clubs`, {
     method: 'GET',
   });
 }
 
-export async function getCauLacBoById(id: number) {
-  return request(`${BASE_URL}/caulacbo/${id}`, {
+export async function getClubById(id: string) {
+  return request(`${BASE_URL}/clubs/${id}`, {
     method: 'GET',
   });
 }
 
-export async function createCauLacBo(data: any) {
-  return request(`${BASE_URL}/caulacbo`, {
+export async function createClub(data: any) {
+  return request(`${BASE_URL}/clubs`, {
     method: 'POST',
     data,
   });
 }
 
-export async function updateCauLacBo(id: number, data: any) {
-  return request(`${BASE_URL}/caulacbo/${id}`, {
+export async function updateClub(id: string, data: any) {
+  return request(`${BASE_URL}/clubs/${id}`, {
     method: 'PUT',
     data,
   });
 }
 
-export async function deleteCauLacBo(id: number) {
-  return request(`${BASE_URL}/caulacbo/${id}`, {
+export async function deleteClub(id: string) {
+  return request(`${BASE_URL}/clubs/${id}`, {
     method: 'DELETE',
   });
 }
 
-// API cho đăng ký
-export async function getDangKyList() {
-  return request(`${BASE_URL}/dangky`, {
+// API cho đơn đăng ký (applications)
+export async function getApplicationList() {
+  return request(`${BASE_URL}/applications`, {
     method: 'GET',
   });
 }
 
-export async function getDangKyById(id: number) {
-  return request(`${BASE_URL}/dangky/${id}`, {
+export async function getApplicationById(id: string) {
+  return request(`${BASE_URL}/applications/${id}`, {
     method: 'GET',
   });
 }
 
-export async function createDangKy(data: any) {
-  return request(`${BASE_URL}/dangky`, {
+export async function createApplication(data: any) {
+  return request(`${BASE_URL}/applications`, {
     method: 'POST',
     data,
   });
 }
 
-export async function updateDangKy(id: number, data: any) {
-  return request(`${BASE_URL}/dangky/${id}`, {
+export async function updateApplication(id: string, data: any) {
+  return request(`${BASE_URL}/applications/${id}`, {
     method: 'PUT',
     data,
   });
 }
 
-export async function deleteDangKy(id: number) {
-  return request(`${BASE_URL}/dangky/${id}`, {
+export async function deleteApplication(id: string) {
+  return request(`${BASE_URL}/applications/${id}`, {
     method: 'DELETE',
   });
 }
 
-// API cho sinh viên
-export async function getSinhVienList() {
-  return request(`${BASE_URL}/sinhvien`, {
+// API cho sinh viên (students)
+export async function getStudentList() {
+  return request(`${BASE_URL}/students`, {
     method: 'GET',
   });
 }
 
-export async function getSinhVienById(id: string) {
-  return request(`${BASE_URL}/sinhvien/${id}`, {
+export async function getStudentById(id: string) {
+  return request(`${BASE_URL}/students/${id}`, {
     method: 'GET',
+  });
+}
+
+// API cho lịch sử thao tác (actionLogs)
+export async function getActionLogList() {
+  return request(`${BASE_URL}/actionLogs`, {
+    method: 'GET',
+  });
+}
+
+export async function getActionLogById(id: string) {
+  return request(`${BASE_URL}/actionLogs/${id}`, {
+    method: 'GET',
+  });
+}
+
+export async function createActionLog(data: any) {
+  return request(`${BASE_URL}/actionLogs`, {
+    method: 'POST',
+    data,
   });
 }
 
 // API đặc biệt
-export async function getDangKyByCauLacBoId(caulacboId: number) {
-  return request(`${BASE_URL}/dangky?caulacboId=${caulacboId}`, {
+export async function getApplicationsByClubId(clubId: string) {
+  return request(`${BASE_URL}/applications?clubId=${clubId}`, {
     method: 'GET',
   });
 }
 
-export async function getDangKyBySinhVien(sinhVienId: string) {
-  return request(`${BASE_URL}/dangky?sinhVienId=${sinhVienId}`, {
+export async function getActionLogsByApplicationId(applicationId: string) {
+  return request(`${BASE_URL}/actionLogs?applicationId=${applicationId}`, {
+    method: 'GET',
+  });
+}
+
+export async function getApplicationsByStatus(status: string) {
+  return request(`${BASE_URL}/applications?status=${status}`, {
     method: 'GET',
   });
 } 
