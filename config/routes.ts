@@ -37,11 +37,12 @@
 		icon: 'ArrowsAltOutlined',
 	},
 	
+	// Thêm route cho Câu Lạc Bộ
 	{
-		path: '/phong-hoc',
-		name: 'Quản lý phòng học',
-		component: './phonghoc',
-		icon: 'HomeOutlined',
+		path: '/caulacbo',
+		name: 'Quản lý câu lạc bộ',
+		icon: 'TeamOutlined',
+		component: './caulacbo/dangky',
 	},
 
 	// DANH MUC HE THONG

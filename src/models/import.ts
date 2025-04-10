@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-// Import model phòng học
-import './phonghoc';
+// Import model câu lạc bộ
+import './caulacbo';
 
 export default () => {
 	const [startLine, setStartLine] = useState<number>(0);
