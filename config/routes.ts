@@ -36,6 +36,12 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/bao-cao-thong-ke',
+		name: 'BaoCaoThongKe',
+		component: './BaoCaoThongKe',
+		icon: 'ArrowsAltOutlined',
+	},
 
 	// DANH MUC HE THONG
 	// {
