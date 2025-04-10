@@ -1,0 +1,81 @@
+{
+  "caulacbo": [
+    {
+      "id": 1,
+      "ten": "CLB Tin học",
+      "moTa": "Câu lạc bộ dành cho sinh viên yêu thích công nghệ thông tin",
+      "nguoiQuanLy": "Nguyễn Văn A",
+      "soDienThoai": "0123456789",
+      "email": "clbtinhoc@example.com",
+      "diaDiem": "Phòng H1-101",
+      "thoiGianHoatDong": "Thứ 7 hàng tuần"
+    },
+    {
+      "id": 2,
+      "ten": "CLB Âm nhạc",
+      "moTa": "Câu lạc bộ dành cho những người yêu âm nhạc",
+      "nguoiQuanLy": "Trần Thị B",
+      "soDienThoai": "0987654321",
+      "email": "clbamnhac@example.com",
+      "diaDiem": "Phòng H2-202",
+      "thoiGianHoatDong": "Chủ nhật hàng tuần"
+    },
+    {
+      "id": 3,
+      "ten": "CLB Tiếng Anh",
+      "moTa": "Câu lạc bộ luyện kỹ năng tiếng Anh",
+      "nguoiQuanLy": "Lê Văn C",
+      "soDienThoai": "0369852147",
+      "email": "clbtienganh@example.com",
+      "diaDiem": "Phòng H3-303",
+      "thoiGianHoatDong": "Thứ 6 hàng tuần"
+    }
+  ],
+  "dangky": [
+    {
+      "id": 1,
+      "sinhVienId": "SV001",
+      "hoTen": "Nguyễn Văn X",
+      "email": "nguyenx@example.com",
+      "soDienThoai": "0123456789",
+      "caulacboId": 1,
+      "ngayDangKy": "2023-05-10T08:30:00Z",
+      "lyDo": "Muốn học hỏi thêm về công nghệ thông tin",
+      "trangThai": "chờ duyệt"
+    },
+    {
+      "id": 2,
+      "sinhVienId": "SV002",
+      "hoTen": "Trần Thị Y",
+      "email": "trany@example.com",
+      "soDienThoai": "0987654321",
+      "caulacboId": 2,
+      "ngayDangKy": "2023-05-11T10:15:00Z",
+      "lyDo": "Yêu thích âm nhạc và muốn phát triển kỹ năng",
+      "trangThai": "đã duyệt"
+    }
+  ],
+  "sinhvien": [
+    {
+      "id": "SV001",
+      "hoTen": "Nguyễn Văn X",
+      "email": "nguyenx@example.com",
+      "soDienThoai": "0123456789",
+      "lop": "IT001"
+    },
+    {
+      "id": "SV002",
+      "hoTen": "Trần Thị Y",
+      "email": "trany@example.com",
+      "soDienThoai": "0987654321",
+      "lop": "IT002"
+    },
+    {
+      "id": "SV003",
+      "hoTen": "Lê Văn Z",
+      "email": "lez@example.com",
+      "soDienThoai": "0369852147",
+      "lop": "IT003"
+    }
+  ]
+} 
