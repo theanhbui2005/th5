@@ -42,6 +42,12 @@
 		component: './Quanlydonhang',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/danhsach-clb',
+		name: 'Danhsachclb',
+		component: './Danhsachclb',
+		icon: 'ArrowsAltOutlined',
+	},
 
 	// DANH MUC HE THONG
 	// {
